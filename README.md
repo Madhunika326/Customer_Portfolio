@@ -1,24 +1,135 @@
-# Customer Portfolio Management
-**Problem Statement**   
-Managing customer investment portfolios manually is time‑consuming, error‑prone, and lacks effective role‑based access control. There is a need for a centralized system that enables secure login for different user roles while supporting efficient portfolio management with scalability and clear separation of responsibilities. The Customer Portfolio Management System addresses this requirement by providing a structured, role‑based web application for portfolio management.   
- 
+# 📊 Customer Portfolio Management System (FinVista)
 
-**Project Overview**   
-The Customer Portfolio Management System is a web‑based application that offers secure, role‑based access for Customers, Advisors, and Admins. The system ensures organized handling of portfolio‑related operations through a clean and maintainable architecture.
+## 📌 Overview
+FinVista is an enterprise-grade, web-based Customer Portfolio Management System designed to streamline investment portfolio operations through secure, centralized, and role-based access.
 
-**Technology Stack**   
-Frontend: Angular, TypeScript, HTML, CSS   
-Backend: ASP.NET Core Web API, C#   
-Database: SQL Server   
- 
-**User Roles**   
-Customer: View personal portfolio details   
-Advisor: Manage and monitor customer portfolios   
-Admin: Manage users and system operations   
- 
-**Key Features**   
-Role‑based login system   
-Secure authentication flow   
-Clear separation of frontend and backend logic   
-Scalable and maintainable implementation using the Factory Pattern   
-Centralized portfolio management   
+The system addresses inefficiencies of manual portfolio handling by introducing automation, real-time insights, and robust security mechanisms for Customers, Advisors, and Admins.
+
+---
+
+## 🚨 Problem Statement
+Traditional portfolio management systems are:
+
+- Time-consuming and error-prone  
+- Lacking real-time visibility  
+- Missing role-based access control  
+- Weak authentication and auditing  
+- Difficult to scale  
+
+---
+
+## ✅ Solution Highlights
+- 🔐 JWT-based secure authentication  
+- 👤 Role-Based Access Control  
+- 📈 Real-time analytics dashboards  
+- ✅ OTP-based KYC workflow  
+- 📜 Audit logging  
+- 🧩 Scalable architecture (Factory Pattern)  
+
+---
+
+## 🏗️ Architecture and Technology Stack
+- **Frontend:** Angular  
+- **Backend:** ASP.NET Core Web API  
+- **Database:** SQL Server  
+- **Architecture:** Three-tier  
+
+---
+
+## 👥 User Roles
+
+### 👤 Customer
+- View portfolio  
+- Track performance  
+- Submit KYC  
+
+### 📊 Advisor
+- Manage customer portfolios  
+- Analyze data  
+- Generate reports  
+
+### ⚙️ Admin
+- Manage users  
+- Approve KYC  
+- Monitor logs  
+
+---
+
+## 🚀 Installation Guide
+
+### ✅ Prerequisites
+- .NET 8 SDK  
+- Node.js (v18+)  
+- SQL Server  
+
+---
+
+### 🔧 Backend Setup
+
+    cd Customer_Portfolio
+    dotnet restore
+    dotnet ef database update
+    dotnet run
+
+---
+
+### 🎨 Frontend Setup
+
+    cd frontend
+    npm install
+    ng serve
+
+---
+
+## 🗄️ Database Configuration
+
+Update `appsettings.json`:
+
+    {
+      "ConnectionStrings": {
+        "DefaultConnection": "Server=YOUR_SERVER;Database=FinVistaDB;Trusted_Connection=True;TrustServerCertificate=True;"
+      }
+    }
+
+---
+
+## 🔄 Core Workflows
+
+### 👤 Customer Flow
+1. Login  
+2. View dashboard  
+3. Submit KYC  
+4. Verify OTP  
+
+### 📊 Advisor Flow
+1. Login  
+2. View customers  
+3. Analyze portfolios  
+4. Generate reports  
+
+### ⚙️ Admin Flow
+1. Login  
+2. Review KYC  
+3. Approve/Reject  
+4. Manage users  
+
+---
+
+## 💡 Innovations
+- Factory Pattern  
+- Audit logging  
+- OTP verification  
+- Chart.js analytics  
+
+---
+
+## 🔮 Future Enhancements
+- Mobile app  
+- AI recommendations  
+- Financial API integration  
+- Notifications  
+
+---
+
+## 📌 Conclusion
+FinVista delivers a secure, scalable, and efficient portfolio management platform with strong architecture and real-time insights.
